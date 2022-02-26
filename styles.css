@@ -1,0 +1,372 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+
+}
+.navbar{
+  background: #3A3A3A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 2px;
+}
+.navbar h1{
+  font-weight: 400;
+  color: white;
+  margin: 5px;
+  margin-left: 10px;
+
+}
+.navbar h1 span{
+  color: #ff1493;
+}
+.menu{
+  flex: 1;
+  text-align: right;
+
+}
+.menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+.menu ul li:hover{
+  background: #ff1493;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.home{
+  display: flex;
+  width: 100%;
+  background-image: url(cover1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+.text{
+  margin-left: 8%;
+  margin-top: 15%;
+  color: white;
+}
+.text .text1{
+  font-size: 27px;
+}
+.text .text2{
+  font-size: 40px;
+}
+.text .text3{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.text .text3 span{
+  color:yellow;
+}
+.text a{
+  background: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+.text a:hover{
+  background-color: crimson;
+  transform: scale(1.2,1.5);
+  color: white;
+}
+.about{
+  background-color: black;
+  /*background-image: url(wall.jpg);*/
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.about .title{
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+.about .title::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+}
+.about .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.about .content .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 330px;
+  border-style: solid;
+  border-color: crimson;
+  border-radius: 50%;
+  margin-left: 40px;
+  border-width: 15px;
+  object-fit: cover;
+}
+.about .left img:hover{
+  box-shadow: 0 0 40px 0 rgba(255, 0, 0, 0.5);
+  border-color: white;
+  transform: scale(1.2,1.2);
+}
+.about .content .right{
+  width: 55%;
+}
+.about .content .right .intro{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: yellow;
+}
+.about .content .right .intro span{
+  color: crimson;
+  text-transform: uppercase;
+}
+.about .content .right p{
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+
+}
+.skills{
+  background-color: black;
+  height: 100vh;
+}
+/*.skills .title{
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+
+  color: white;
+}
+
+.skills .skillscontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.row .text{
+  flex-basis: 50%;
+  background: #4E4E4E;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+.row .text:hover{
+  box-shadow: 0 0 50px 0px crimson;
+  transform: scale(1.3,1.2);
+}
+.row .text h3{
+  font-size: 35px;
+  font-weight: 800;
+  color: #ff1493;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.row .text ul{
+  list-style: none;
+  text-align: center;
+  font-size: 27px;
+
+}*/
+.skills .header{
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+.skills .header::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+
+}
+.skills .container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+.skillbox{
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+.skilltitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.skilltitle h3{
+  color: #fff;
+  margin: 0.5rem;
+}
+.skillicon{
+  width: 50px;
+}
+.skills .img{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills .img:hover{
+  transform: scale(1.23,1.23);
+}
+.contactsection{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.contactsection .container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.contactsection .title{
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+.contactsection .title::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+}
+.contactinfo{
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+  margin-top: 5%;
+}
+.contactinfo i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+.contactform{
+  max-width: 700px;
+  margin-right: 50px;
+}
+.contactinfo, .contactform{
+  flex: 1;
+}
+.contactform h2{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+
+}
+.contactform .textbox{
+  background: #3A3A3A;
+  color: white;
+  border: none;
+  width: 48.5%;
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+}
+.contactform .textbox:first-child{
+  margin-right: 15px;
+
+}
+.contactform textarea{
+  background: #3A3A3A;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+}
+.contactform .sendbtn{
+  float: right;
+  background: #2E94E3;
+  color: white;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+  cursor: pointer;
+}
+.contactform .sendbtn:hover{
+  background: #0582E3;
+
+}
